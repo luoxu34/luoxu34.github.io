@@ -20,7 +20,7 @@
       <description>原文： http://spark.apache.org/docs/latest/quick-start.html
 译文： https://luoxu34.github.io/2018/06/09/spark-快速入门---python-语言/
 译者： luoxu34
-时间： 2018/06/08
+时间： 2018/06/09
 环境:
    Name Version     OS Ubuntu 18.04 LTS   JDK 8u172   Python 3.6.5   PySpark 2.3.0     需要了解的是，Spark 2.0 之前的版本，主要的编程接口是弹性分布式数据集(Resilient Distributed Dataset, 简称RDD)。在 Spark 2.0 之后的版本虽然依旧支持 RDD，但是 RDD 已经被数据集 Dataset 所取代，后者不但是强类型的，而且与 RDD 相比具有更多的改进和优化，因此强烈建议使用 Dataset 而不是 RDD。
  1. 使用Spark Shell进行交互式分析 1.1 基础 Basics Spark shell提供了一种学习API的简单方法，它同时也是交互式分析数据的强大工具。 第一步，需要进入 Spark 的交互模式：</description>
