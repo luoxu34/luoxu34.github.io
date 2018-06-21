@@ -6,17 +6,17 @@
     <description>Recent content on Luoxu34&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Jun 2018 23:35:45 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 22 Jun 2018 02:15:00 +0800</lastBuildDate>
     
 	<atom:link href="https://luoxu34.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Miniconda 使用介绍</title>
-      <link>https://luoxu34.github.io/2018/06/16/miniconda-%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D/</link>
-      <pubDate>Sat, 16 Jun 2018 23:35:45 +0800</pubDate>
+      <link>https://luoxu34.github.io/2018/06/22/miniconda-%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Fri, 22 Jun 2018 02:15:00 +0800</pubDate>
       
-      <guid>https://luoxu34.github.io/2018/06/16/miniconda-%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D/</guid>
+      <guid>https://luoxu34.github.io/2018/06/22/miniconda-%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D/</guid>
       <description>介绍 Anaconda 是一个用于科学计算的 Python 发行版，支持 Linux, Mac, Windows, 包含了众多流行的科学计算、数据分析的 Python 包。
 Miniconda 是一个 Anaconda 的轻量级替代，默认只包含了 python 和 conda，但是可以通过 pip 和 conda 来安装所需要的包。
 可以借助 Miniconda 解决 python 发开中的包管理问题和环境管理问题（尤其是多版本Python并存问题），其他的方案有：

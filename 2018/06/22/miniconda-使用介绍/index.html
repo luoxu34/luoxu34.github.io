@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.41" />
+
+
+<title>Miniconda 使用介绍 - Luoxu34&#39;s Blog</title>
+<meta property="og:title" content="Miniconda 使用介绍 - Luoxu34&#39;s Blog">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://luoxu34.github.io/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://luoxu34.github.io/" class="nav-logo">
+    <img src="https://luoxu34.github.io/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/luoxu34">GitHub</a></li>
+    
+    <li><a href="https://luoxu34.github.io/">Home</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Miniconda 使用介绍</h1>
+
+    
+    <span class="article-date">June 22, 2018</span>
+    
+
+    <div class="article-content">
+      
+
+<h1 id="介绍">介绍</h1>
+
+<p>Anaconda 是一个用于科学计算的 Python 发行版，支持 Linux, Mac, Windows, 包含了众多流行的科学计算、数据分析的 Python 包。</p>
+
+<p>Miniconda 是一个 Anaconda 的轻量级替代，默认只包含了 python 和 conda，但是可以通过 pip 和 conda 来安装所需要的包。</p>
+
+<p>可以借助 Miniconda 解决 python 发开中的包管理问题和环境管理问题（尤其是多版本Python并存问题），其他的方案有：</p>
+
+<ul>
+<li>virtualenv/venv</li>
+<li>vagrant</li>
+<li>docker</li>
+</ul>
+
+<h1 id="下载">下载</h1>
+
+<p>Anaconda 下载 <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</a></p>
+
+<p>Miniconda 下载 <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/</a></p>
+
+<h1 id="安装">安装</h1>
+
+<pre><code>$ bash Miniconda3-latest-Linux-x86_64.sh
+
+[/home/luoxu/miniconda3] &gt;&gt;&gt;
+PREFIX=/home/luoxu/miniconda3
+installing: python-3.6.5-hc3d631a_2 ...
+Python 3.6.5 :: Anaconda, Inc.
+installing: ca-certificates-2018.03.07-0 ...
+installing: conda-env-2.6.0-h36134e3_1 ...
+
+......
+
+installing: conda-4.5.4-py36_0 ...
+installation finished.
+Do you wish the installer to prepend the Miniconda3 install location
+to PATH in your /home/luoxu/.bashrc ? [yes|no]
+[no] &gt;&gt;&gt; yes
+
+Appending source /home/luoxu/miniconda3/bin/activate to /home/luoxu/.bashrc
+A backup will be made to: /home/luoxu/.bashrc-miniconda3.bak
+
+
+For this change to become active, you have to open a new terminal.
+
+Thank you for installing Miniconda3!
+</code></pre>
+
+<p>如果安装时出错并提示 bunzip2: command not found</p>
+
+<p>解决办法： <code>yum install bzip2</code></p>
+
+<p>source环境配置文件后，执行 <code>conda -V</code> 看到版本信息说明安装完成。</p>
+
+<h1 id="配置">配置</h1>
+
+<p>配置 Anaconda 仓库的镜像</p>
+
+<pre><code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+</code></pre>
+
+<p>第一次运行 <code>conda config</code> 命令时，会在 home 目录自动创建 .condarc 配置文件</p>
+
+<h1 id="使用">使用</h1>
+
+<p>查看环境： conda env list</p>
+
+<p>创建环境： conda create &ndash;name=jupyter -y</p>
+
+<p>删除环境： conda remove &ndash;name=jupyter &ndash;all -y</p>
+
+<p>进入环境： source activate jupyter</p>
+
+<p>退出环境： source deactivate</p>
+
+<p>手册下载： <a href="https://conda.io/docs/_downloads/conda-cheatsheet.pdf">conda-cheatsheet</a></p>
+
+<h1 id="参考">参考</h1>
+
+<ul>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">清华大学开源软件镜像站 - Anaconda 镜像使用帮助</a></li>
+<li><a href="http://python.jobbole.com/86236/">Anaconda使用总结</a></li>
+</ul>
+
+    </div>
+  </article>
+
+  
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://luoxu34.github.io/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="https://luoxu34.github.io/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
